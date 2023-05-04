@@ -3,7 +3,7 @@
 from utils import db
 
 
-def select_tous_les_bateaux(conn):
+def select_tous_les_bateaux(conn): r
     """
     Affiche la liste de tous les bateaux.
 
