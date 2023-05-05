@@ -37,7 +37,7 @@ def mise_a_jour_bd(conn: sqlite3.Connection, file: str):
 
     with open(file, 'r') as f:
         createSql = f.read()
-        sqlQueries = createSql.split(";")
+        sqlQueries = createSql.split(";\n")
 
     # Exécution de toutes les requêtes du tableau
     cursor = conn.cursor()
